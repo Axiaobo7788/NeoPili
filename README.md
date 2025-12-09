@@ -33,8 +33,6 @@
 - [x] Windows
 - [x] Linux
 
-[![Packaging status](https://repology.org/badge/vertical-allrepos/piliplus.svg)](https://repology.org/project/piliplus/versions)
-
 ## refactor
 
 - [ ] gRPC [wip]
