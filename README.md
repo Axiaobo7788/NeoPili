@@ -5,14 +5,14 @@
 
 
 <div align="center">
-    <h1>PiliPlus</h1>
+    <h1>NeoPili</h1>
 <div align="center">
     
-![GitHub repo size](https://img.shields.io/github/repo-size/bggRGjQaUbCoE/PiliPlus) 
-![GitHub Repo stars](https://img.shields.io/github/stars/bggRGjQaUbCoE/PiliPlus) 
-![GitHub all releases](https://img.shields.io/github/downloads/bggRGjQaUbCoE/PiliPlus/total) 
+![GitHub repo size](https://img.shields.io/github/repo-size/Axiaobo7788/NeoPili) 
+![GitHub Repo stars](https://img.shields.io/github/stars/Axiaobo7788/NeoPili) 
+![GitHub all releases](https://img.shields.io/github/downloads/Axiaobo7788/NeoPili/total) 
 </div>
-    <p>使用Flutter开发的BiliBili第三方客户端</p>
+    <p>A third-party client for BiliBili developed using Flutter</p>
     
 <img src="assets/screenshots/510shots_so.png" width="32%" alt="home" />
 <img src="assets/screenshots/174shots_so.png" width="32%" alt="home" />
@@ -25,7 +25,7 @@
 
 <br/>
 
-## 适配平台
+## Supported Platforms
 
 - [x] Android
 - [x] iOS
@@ -210,32 +210,37 @@
 
 <br/>
 
-## 下载
+## Download
 
-可以通过右侧release进行下载或拉取代码到本地进行编译
-
-<br/>
-
-## 声明
-
-此项目（PiliPlus）是个人为了兴趣而开发, 仅用于学习和测试，请于下载后24小时内删除。
-所用API皆从官方网站收集, 不提供任何破解内容。
-在此致敬原作者：[guozhigq/pilipala](https://github.com/guozhigq/pilipala)
-在此致敬上游作者：[orz12/PiliPalaX](https://github.com/orz12/PiliPalaX)
-本仓库做了更激进的修改，感谢原作者的开源精神。
-
-感谢使用
-
+You may download the code via the release option on the right or pull it locally for compilation.
 
 <br/>
 
-## 致谢
+## Statement
+
+neopili is a community-driven continuation of piliplus,
+focusing on Linux usability and active collaboration.
+
+This repository exists because:
+- Issues, discussions are currently closed upstream
+- Recent changes broke media_kit support on Linux
+- The community still needs a usable native Bilibili client on Linux
+
+This project (NeoPili) is developed by an individual for personal interest, solely for learning and testing purposes. Please delete it within 24 hours of download. All APIs are sourced from official websites, and no cracked content is provided.
+We pay tribute to the original author: [guozhigq/pilipala](https://github.com/guozhigq/pilipala)
+We pay tribute to the upstream author: [orz12/PiliPalaX](https://github.com/orz12/PiliPalaX),
+[bggRGjQaUbCoE/PiliPlus](https://github.com/bggRGjQaUbCoE/PiliPlus)
+This repository contains more radical modifications. We thank the original author for their open-source spirit.<br/>
+Thank you for using it.
+<br/>
+
+## Acknowledgements
 
 - [bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect)
 - [flutter_meedu_videoplayer](https://github.com/zezo357/flutter_meedu_videoplayer)
 - [media-kit](https://github.com/media-kit/media-kit)
 - [dio](https://pub.dev/packages/dio)
-- 等等
+- and more
 
 <br/>
 <br/>
@@ -243,10 +248,10 @@
 
 ## Star History
 
-<a href="https://www.star-history.com/#bggRGjQaUbCoE/PiliPlus&Date">
+<a href="https://www.star-history.com/#Axiaobo7788/NeoPili&Date">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=bggRGjQaUbCoE/PiliPlus&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=bggRGjQaUbCoE/PiliPlus&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=bggRGjQaUbCoE/PiliPlus&type=Date" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Axiaobo7788/NeoPili&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Axiaobo7788/NeoPili&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Axiaobo7788/NeoPili&type=Date" />
  </picture>
 </a>
