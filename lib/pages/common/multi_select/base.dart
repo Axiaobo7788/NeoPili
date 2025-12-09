@@ -1,5 +1,5 @@
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/pages/common/common_list_controller.dart';
+import 'package:NeoPili/http/loading_state.dart';
+import 'package:NeoPili/pages/common/common_list_controller.dart';
 import 'package:get/get.dart';
 
 mixin MultiSelectData {

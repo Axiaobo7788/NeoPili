@@ -1,11 +1,11 @@
-import 'package:PiliPlus/common/widgets/flutter/dyn/ink_well.dart';
-import 'package:PiliPlus/common/widgets/image/image_save.dart';
-import 'package:PiliPlus/models/dynamics/result.dart';
-import 'package:PiliPlus/pages/dynamics/widgets/dyn_content.dart';
-import 'package:PiliPlus/pages/dynamics/widgets/module_panel.dart';
-import 'package:PiliPlus/utils/date_utils.dart';
-import 'package:PiliPlus/utils/page_utils.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:NeoPili/common/widgets/flutter/dyn/ink_well.dart';
+import 'package:NeoPili/common/widgets/image/image_save.dart';
+import 'package:NeoPili/models/dynamics/result.dart';
+import 'package:NeoPili/pages/dynamics/widgets/dyn_content.dart';
+import 'package:NeoPili/pages/dynamics/widgets/module_panel.dart';
+import 'package:NeoPili/utils/date_utils.dart';
+import 'package:NeoPili/utils/page_utils.dart';
+import 'package:NeoPili/utils/utils.dart';
 import 'package:flutter/material.dart' hide InkWell;
 import 'package:get/get.dart';
 

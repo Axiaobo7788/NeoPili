@@ -1,10 +1,10 @@
-import 'package:PiliPlus/common/widgets/dialog/dialog.dart';
-import 'package:PiliPlus/http/dynamics.dart';
-import 'package:PiliPlus/http/msg.dart';
-import 'package:PiliPlus/models/dynamics/vote_model.dart';
-import 'package:PiliPlus/models_new/upload_bfs/data.dart';
-import 'package:PiliPlus/utils/accounts.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:NeoPili/common/widgets/dialog/dialog.dart';
+import 'package:NeoPili/http/dynamics.dart';
+import 'package:NeoPili/http/msg.dart';
+import 'package:NeoPili/models/dynamics/vote_model.dart';
+import 'package:NeoPili/models_new/upload_bfs/data.dart';
+import 'package:NeoPili/utils/accounts.dart';
+import 'package:NeoPili/utils/utils.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 

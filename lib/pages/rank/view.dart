@@ -1,6 +1,6 @@
-import 'package:PiliPlus/models/common/rank_type.dart';
-import 'package:PiliPlus/pages/rank/controller.dart';
-import 'package:PiliPlus/pages/rank/zone/view.dart';
+import 'package:NeoPili/models/common/rank_type.dart';
+import 'package:NeoPili/pages/rank/controller.dart';
+import 'package:NeoPili/pages/rank/zone/view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

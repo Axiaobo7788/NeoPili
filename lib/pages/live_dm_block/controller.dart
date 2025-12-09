@@ -1,8 +1,8 @@
-import 'package:PiliPlus/http/live.dart';
-import 'package:PiliPlus/models/common/live_dm_silent_type.dart';
-import 'package:PiliPlus/models_new/live/live_dm_block/shield_info.dart';
-import 'package:PiliPlus/models_new/live/live_dm_block/shield_rules.dart';
-import 'package:PiliPlus/models_new/live/live_dm_block/shield_user_list.dart';
+import 'package:NeoPili/http/live.dart';
+import 'package:NeoPili/models/common/live_dm_silent_type.dart';
+import 'package:NeoPili/models_new/live/live_dm_block/shield_info.dart';
+import 'package:NeoPili/models_new/live/live_dm_block/shield_rules.dart';
+import 'package:NeoPili/models_new/live/live_dm_block/shield_user_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';

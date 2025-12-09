@@ -1,13 +1,13 @@
-import 'package:PiliPlus/common/widgets/button/icon_button.dart';
-import 'package:PiliPlus/common/widgets/custom_tooltip.dart';
-import 'package:PiliPlus/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPlus/common/widgets/loading_widget/loading_widget.dart';
-import 'package:PiliPlus/common/widgets/scroll_physics.dart';
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/models/common/image_type.dart';
-import 'package:PiliPlus/models_new/emote/emote.dart';
-import 'package:PiliPlus/models_new/emote/package.dart';
-import 'package:PiliPlus/pages/emote/controller.dart';
+import 'package:NeoPili/common/widgets/button/icon_button.dart';
+import 'package:NeoPili/common/widgets/custom_tooltip.dart';
+import 'package:NeoPili/common/widgets/image/network_img_layer.dart';
+import 'package:NeoPili/common/widgets/loading_widget/loading_widget.dart';
+import 'package:NeoPili/common/widgets/scroll_physics.dart';
+import 'package:NeoPili/http/loading_state.dart';
+import 'package:NeoPili/models/common/image_type.dart';
+import 'package:NeoPili/models_new/emote/emote.dart';
+import 'package:NeoPili/models_new/emote/package.dart';
+import 'package:NeoPili/pages/emote/controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

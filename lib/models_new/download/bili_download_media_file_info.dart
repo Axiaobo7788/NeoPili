@@ -1,4 +1,4 @@
-import 'package:PiliPlus/utils/extension.dart';
+import 'package:NeoPili/utils/extension.dart';
 
 sealed class BiliDownloadMediaInfo {
   const BiliDownloadMediaInfo();

@@ -1,7 +1,7 @@
-import 'package:PiliPlus/common/constants.dart';
-import 'package:PiliPlus/models/common/account_type.dart';
-import 'package:PiliPlus/utils/accounts.dart';
-import 'package:PiliPlus/utils/id_utils.dart';
+import 'package:NeoPili/common/constants.dart';
+import 'package:NeoPili/models/common/account_type.dart';
+import 'package:NeoPili/utils/accounts.dart';
+import 'package:NeoPili/utils/id_utils.dart';
 import 'package:cookie_jar/cookie_jar.dart';
 import 'package:hive/hive.dart';
 

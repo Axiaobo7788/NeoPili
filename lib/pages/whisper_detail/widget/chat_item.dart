@@ -1,22 +1,22 @@
 import 'dart:convert';
 
-import 'package:PiliPlus/common/constants.dart';
-import 'package:PiliPlus/common/widgets/badge.dart';
-import 'package:PiliPlus/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPlus/grpc/bilibili/im/interfaces/v1.pb.dart'
+import 'package:NeoPili/common/constants.dart';
+import 'package:NeoPili/common/widgets/badge.dart';
+import 'package:NeoPili/common/widgets/image/network_img_layer.dart';
+import 'package:NeoPili/grpc/bilibili/im/interfaces/v1.pb.dart'
     show EmotionInfo;
-import 'package:PiliPlus/grpc/bilibili/im/type.pb.dart' show Msg, MsgType;
-import 'package:PiliPlus/http/search.dart';
-import 'package:PiliPlus/models/common/badge_type.dart';
-import 'package:PiliPlus/models/common/image_preview_type.dart';
-import 'package:PiliPlus/models/common/image_type.dart';
-import 'package:PiliPlus/utils/app_scheme.dart';
-import 'package:PiliPlus/utils/date_utils.dart';
-import 'package:PiliPlus/utils/duration_utils.dart';
-import 'package:PiliPlus/utils/id_utils.dart';
-import 'package:PiliPlus/utils/image_utils.dart';
-import 'package:PiliPlus/utils/page_utils.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:NeoPili/grpc/bilibili/im/type.pb.dart' show Msg, MsgType;
+import 'package:NeoPili/http/search.dart';
+import 'package:NeoPili/models/common/badge_type.dart';
+import 'package:NeoPili/models/common/image_preview_type.dart';
+import 'package:NeoPili/models/common/image_type.dart';
+import 'package:NeoPili/utils/app_scheme.dart';
+import 'package:NeoPili/utils/date_utils.dart';
+import 'package:NeoPili/utils/duration_utils.dart';
+import 'package:NeoPili/utils/id_utils.dart';
+import 'package:NeoPili/utils/image_utils.dart';
+import 'package:NeoPili/utils/page_utils.dart';
+import 'package:NeoPili/utils/utils.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';

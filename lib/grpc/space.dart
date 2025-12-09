@@ -1,8 +1,8 @@
-import 'package:PiliPlus/grpc/bilibili/app/dynamic/v2.pb.dart';
-import 'package:PiliPlus/grpc/bilibili/pagination.pb.dart';
-import 'package:PiliPlus/grpc/grpc_req.dart';
-import 'package:PiliPlus/grpc/url.dart';
-import 'package:PiliPlus/http/loading_state.dart';
+import 'package:NeoPili/grpc/bilibili/app/dynamic/v2.pb.dart';
+import 'package:NeoPili/grpc/bilibili/pagination.pb.dart';
+import 'package:NeoPili/grpc/grpc_req.dart';
+import 'package:NeoPili/grpc/url.dart';
+import 'package:NeoPili/http/loading_state.dart';
 import 'package:fixnum/fixnum.dart';
 
 class SpaceGrpc {

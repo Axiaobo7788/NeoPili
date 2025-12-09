@@ -1,6 +1,6 @@
-import 'package:PiliPlus/models/common/video/cdn_type.dart';
-import 'package:PiliPlus/models_new/live/live_room_play_info/codec.dart';
-import 'package:PiliPlus/utils/storage_pref.dart';
+import 'package:NeoPili/models/common/video/cdn_type.dart';
+import 'package:NeoPili/models_new/live/live_room_play_info/codec.dart';
+import 'package:NeoPili/utils/storage_pref.dart';
 import 'package:flutter/foundation.dart';
 
 abstract final class VideoUtils {

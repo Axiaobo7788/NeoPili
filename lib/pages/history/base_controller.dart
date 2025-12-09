@@ -1,7 +1,7 @@
-import 'package:PiliPlus/http/user.dart';
-import 'package:PiliPlus/utils/accounts.dart';
-import 'package:PiliPlus/utils/storage.dart';
-import 'package:PiliPlus/utils/storage_key.dart';
+import 'package:NeoPili/http/user.dart';
+import 'package:NeoPili/utils/accounts.dart';
+import 'package:NeoPili/utils/storage.dart';
+import 'package:NeoPili/utils/storage_key.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';

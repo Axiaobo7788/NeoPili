@@ -1,8 +1,8 @@
-import 'package:PiliPlus/models_new/space/space_article/author.dart';
-import 'package:PiliPlus/models_new/space/space_article/category.dart';
-import 'package:PiliPlus/models_new/space/space_article/media.dart';
-import 'package:PiliPlus/models_new/space/space_article/stats.dart';
-import 'package:PiliPlus/utils/extension.dart';
+import 'package:NeoPili/models_new/space/space_article/author.dart';
+import 'package:NeoPili/models_new/space/space_article/category.dart';
+import 'package:NeoPili/models_new/space/space_article/media.dart';
+import 'package:NeoPili/models_new/space/space_article/stats.dart';
+import 'package:NeoPili/utils/extension.dart';
 
 class SpaceArticleItem {
   int? id;

@@ -1,8 +1,8 @@
-import 'package:PiliPlus/http/api.dart';
-import 'package:PiliPlus/http/init.dart';
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/models_new/danmaku/post.dart';
-import 'package:PiliPlus/utils/accounts.dart';
+import 'package:NeoPili/http/api.dart';
+import 'package:NeoPili/http/init.dart';
+import 'package:NeoPili/http/loading_state.dart';
+import 'package:NeoPili/models_new/danmaku/post.dart';
+import 'package:NeoPili/utils/accounts.dart';
 import 'package:dio/dio.dart';
 
 abstract final class DanmakuHttp {

@@ -1,13 +1,13 @@
 import 'dart:convert';
 
-import 'package:PiliPlus/common/widgets/pendant_avatar.dart';
-import 'package:PiliPlus/models/common/dynamic/dynamics_type.dart';
-import 'package:PiliPlus/models/dynamics/article_content_model.dart';
-import 'package:PiliPlus/models/model_avatar.dart';
-import 'package:PiliPlus/models_new/live/live_feed_index/watched_show.dart';
-import 'package:PiliPlus/utils/extension.dart';
-import 'package:PiliPlus/utils/storage_pref.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:NeoPili/common/widgets/pendant_avatar.dart';
+import 'package:NeoPili/models/common/dynamic/dynamics_type.dart';
+import 'package:NeoPili/models/dynamics/article_content_model.dart';
+import 'package:NeoPili/models/model_avatar.dart';
+import 'package:NeoPili/models_new/live/live_feed_index/watched_show.dart';
+import 'package:NeoPili/utils/extension.dart';
+import 'package:NeoPili/utils/storage_pref.dart';
+import 'package:NeoPili/utils/utils.dart';
 
 class DynamicsDataModel {
   bool? hasMore;

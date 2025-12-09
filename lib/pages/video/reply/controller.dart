@@ -1,11 +1,11 @@
-import 'package:PiliPlus/grpc/bilibili/main/community/reply/v1.pb.dart'
+import 'package:NeoPili/grpc/bilibili/main/community/reply/v1.pb.dart'
     show MainListReply, ReplyInfo;
-import 'package:PiliPlus/grpc/reply.dart';
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/models/common/video/video_type.dart';
-import 'package:PiliPlus/pages/common/reply_controller.dart';
-import 'package:PiliPlus/pages/video/controller.dart';
-import 'package:PiliPlus/utils/id_utils.dart';
+import 'package:NeoPili/grpc/reply.dart';
+import 'package:NeoPili/http/loading_state.dart';
+import 'package:NeoPili/models/common/video/video_type.dart';
+import 'package:NeoPili/pages/common/reply_controller.dart';
+import 'package:NeoPili/pages/video/controller.dart';
+import 'package:NeoPili/utils/id_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

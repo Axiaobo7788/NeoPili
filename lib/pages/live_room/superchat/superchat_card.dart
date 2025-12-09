@@ -1,10 +1,10 @@
 import 'dart:async';
 
-import 'package:PiliPlus/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPlus/models/common/image_type.dart';
-import 'package:PiliPlus/models_new/live/live_superchat/item.dart';
-import 'package:PiliPlus/pages/video/introduction/ugc/widgets/selectable_text.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:NeoPili/common/widgets/image/network_img_layer.dart';
+import 'package:NeoPili/models/common/image_type.dart';
+import 'package:NeoPili/models_new/live/live_superchat/item.dart';
+import 'package:NeoPili/pages/video/introduction/ugc/widgets/selectable_text.dart';
+import 'package:NeoPili/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

@@ -1,6 +1,6 @@
-import 'package:PiliPlus/common/widgets/custom_icon.dart';
-import 'package:PiliPlus/http/pgc.dart';
-import 'package:PiliPlus/utils/accounts.dart';
+import 'package:NeoPili/common/widgets/custom_icon.dart';
+import 'package:NeoPili/http/pgc.dart';
+import 'package:NeoPili/utils/accounts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';

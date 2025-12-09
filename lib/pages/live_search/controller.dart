@@ -1,9 +1,9 @@
-import 'package:PiliPlus/models/common/live_search_type.dart';
-import 'package:PiliPlus/pages/live_search/child/controller.dart';
-import 'package:PiliPlus/utils/extension.dart';
-import 'package:PiliPlus/utils/id_utils.dart';
-import 'package:PiliPlus/utils/page_utils.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:NeoPili/models/common/live_search_type.dart';
+import 'package:NeoPili/pages/live_search/child/controller.dart';
+import 'package:NeoPili/utils/extension.dart';
+import 'package:NeoPili/utils/id_utils.dart';
+import 'package:NeoPili/utils/page_utils.dart';
+import 'package:NeoPili/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

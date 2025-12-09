@@ -1,6 +1,6 @@
-import 'package:PiliPlus/models/common/image_preview_type.dart';
-import 'package:PiliPlus/utils/image_utils.dart';
-import 'package:PiliPlus/utils/page_utils.dart';
+import 'package:NeoPili/models/common/image_preview_type.dart';
+import 'package:NeoPili/utils/image_utils.dart';
+import 'package:NeoPili/utils/page_utils.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter/material.dart';

@@ -1,8 +1,8 @@
 import 'dart:convert';
 
-import 'package:PiliPlus/http/danmaku_block.dart';
-import 'package:PiliPlus/models/common/dm_block_type.dart';
-import 'package:PiliPlus/models/user/danmaku_block.dart';
+import 'package:NeoPili/http/danmaku_block.dart';
+import 'package:NeoPili/models/common/dm_block_type.dart';
+import 'package:NeoPili/models/user/danmaku_block.dart';
 import 'package:crclib/catalog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';

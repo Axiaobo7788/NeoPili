@@ -1,8 +1,8 @@
-import 'package:PiliPlus/grpc/bilibili/app/im/v1.pb.dart'
+import 'package:NeoPili/grpc/bilibili/app/im/v1.pb.dart'
     show GetImSettingsReply, IMSettingType, Setting;
-import 'package:PiliPlus/grpc/im.dart';
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/pages/common/common_data_controller.dart';
+import 'package:NeoPili/grpc/im.dart';
+import 'package:NeoPili/http/loading_state.dart';
+import 'package:NeoPili/pages/common/common_data_controller.dart';
 import 'package:get/get.dart';
 import 'package:protobuf/protobuf.dart' show PbMap;
 

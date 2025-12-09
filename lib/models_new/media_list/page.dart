@@ -1,4 +1,4 @@
-import 'package:PiliPlus/models_new/media_list/dimension.dart';
+import 'package:NeoPili/models_new/media_list/dimension.dart';
 
 class Page {
   int? id;

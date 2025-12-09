@@ -1,11 +1,11 @@
-import 'package:PiliPlus/common/widgets/progress_bar/audio_video_progress_bar.dart';
-import 'package:PiliPlus/common/widgets/progress_bar/segment_progress_bar.dart';
-import 'package:PiliPlus/pages/video/controller.dart';
-import 'package:PiliPlus/plugin/pl_player/controller.dart';
-import 'package:PiliPlus/plugin/pl_player/view.dart';
-import 'package:PiliPlus/utils/extension.dart';
-import 'package:PiliPlus/utils/feed_back.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:NeoPili/common/widgets/progress_bar/audio_video_progress_bar.dart';
+import 'package:NeoPili/common/widgets/progress_bar/segment_progress_bar.dart';
+import 'package:NeoPili/pages/video/controller.dart';
+import 'package:NeoPili/plugin/pl_player/controller.dart';
+import 'package:NeoPili/plugin/pl_player/view.dart';
+import 'package:NeoPili/utils/extension.dart';
+import 'package:NeoPili/utils/feed_back.dart';
+import 'package:NeoPili/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

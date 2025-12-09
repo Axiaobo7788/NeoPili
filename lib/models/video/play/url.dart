@@ -1,9 +1,9 @@
 import 'dart:math' show max, min;
 
-import 'package:PiliPlus/models/common/video/audio_quality.dart';
-import 'package:PiliPlus/models/common/video/video_quality.dart';
-import 'package:PiliPlus/models_new/sponsor_block/segment_item.dart';
-import 'package:PiliPlus/utils/extension.dart';
+import 'package:NeoPili/models/common/video/audio_quality.dart';
+import 'package:NeoPili/models/common/video/video_quality.dart';
+import 'package:NeoPili/models_new/sponsor_block/segment_item.dart';
+import 'package:NeoPili/utils/extension.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 
 class PlayUrlModel {

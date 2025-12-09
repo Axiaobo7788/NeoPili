@@ -1,6 +1,6 @@
-import 'package:PiliPlus/common/widgets/pendant_avatar.dart';
-import 'package:PiliPlus/models/search/result.dart';
-import 'package:PiliPlus/utils/num_utils.dart';
+import 'package:NeoPili/common/widgets/pendant_avatar.dart';
+import 'package:NeoPili/models/search/result.dart';
+import 'package:NeoPili/utils/num_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

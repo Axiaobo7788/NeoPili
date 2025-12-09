@@ -1,16 +1,16 @@
-import 'package:PiliPlus/http/video.dart';
-import 'package:PiliPlus/models/common/account_type.dart';
-import 'package:PiliPlus/models/common/video/audio_quality.dart';
-import 'package:PiliPlus/models/common/video/video_decode_type.dart';
-import 'package:PiliPlus/models/common/video/video_quality.dart';
-import 'package:PiliPlus/models/common/video/video_type.dart';
-import 'package:PiliPlus/models/video/play/url.dart';
-import 'package:PiliPlus/models_new/download/bili_download_entry_info.dart';
-import 'package:PiliPlus/models_new/download/bili_download_media_file_info.dart';
-import 'package:PiliPlus/utils/accounts.dart';
-import 'package:PiliPlus/utils/extension.dart';
-import 'package:PiliPlus/utils/storage_pref.dart';
-import 'package:PiliPlus/utils/video_utils.dart';
+import 'package:NeoPili/http/video.dart';
+import 'package:NeoPili/models/common/account_type.dart';
+import 'package:NeoPili/models/common/video/audio_quality.dart';
+import 'package:NeoPili/models/common/video/video_decode_type.dart';
+import 'package:NeoPili/models/common/video/video_quality.dart';
+import 'package:NeoPili/models/common/video/video_type.dart';
+import 'package:NeoPili/models/video/play/url.dart';
+import 'package:NeoPili/models_new/download/bili_download_entry_info.dart';
+import 'package:NeoPili/models_new/download/bili_download_media_file_info.dart';
+import 'package:NeoPili/utils/accounts.dart';
+import 'package:NeoPili/utils/extension.dart';
+import 'package:NeoPili/utils/storage_pref.dart';
+import 'package:NeoPili/utils/video_utils.dart';
 import 'package:get/get_utils/get_utils.dart';
 
 abstract final class DownloadHttp {

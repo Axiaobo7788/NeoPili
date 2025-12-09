@@ -1,16 +1,16 @@
 import 'dart:convert';
 
-import 'package:PiliPlus/common/widgets/badge.dart';
-import 'package:PiliPlus/common/widgets/dialog/dialog.dart';
-import 'package:PiliPlus/common/widgets/flutter/list_tile.dart';
-import 'package:PiliPlus/common/widgets/pendant_avatar.dart';
-import 'package:PiliPlus/grpc/bilibili/app/im/v1.pb.dart'
+import 'package:NeoPili/common/widgets/badge.dart';
+import 'package:NeoPili/common/widgets/dialog/dialog.dart';
+import 'package:NeoPili/common/widgets/flutter/list_tile.dart';
+import 'package:NeoPili/common/widgets/pendant_avatar.dart';
+import 'package:NeoPili/grpc/bilibili/app/im/v1.pb.dart'
     show Session, SessionId, SessionPageType, SessionType, UnreadStyle;
-import 'package:PiliPlus/models/common/badge_type.dart';
-import 'package:PiliPlus/pages/whisper_secondary/view.dart';
-import 'package:PiliPlus/utils/date_utils.dart';
-import 'package:PiliPlus/utils/extension.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:NeoPili/models/common/badge_type.dart';
+import 'package:NeoPili/pages/whisper_secondary/view.dart';
+import 'package:NeoPili/utils/date_utils.dart';
+import 'package:NeoPili/utils/extension.dart';
+import 'package:NeoPili/utils/utils.dart';
 import 'package:fixnum/fixnum.dart';
 import 'package:flutter/material.dart' hide ListTile;
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';

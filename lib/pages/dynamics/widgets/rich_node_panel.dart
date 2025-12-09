@@ -1,16 +1,16 @@
 import 'dart:io' show Platform;
 
-import 'package:PiliPlus/common/widgets/image/custom_grid_view.dart';
-import 'package:PiliPlus/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPlus/http/dynamics.dart';
-import 'package:PiliPlus/http/search.dart';
-import 'package:PiliPlus/models/common/image_preview_type.dart'
+import 'package:NeoPili/common/widgets/image/custom_grid_view.dart';
+import 'package:NeoPili/common/widgets/image/network_img_layer.dart';
+import 'package:NeoPili/http/dynamics.dart';
+import 'package:NeoPili/http/search.dart';
+import 'package:NeoPili/models/common/image_preview_type.dart'
     show SourceModel;
-import 'package:PiliPlus/models/common/image_type.dart';
-import 'package:PiliPlus/models/dynamics/result.dart';
-import 'package:PiliPlus/pages/dynamics/widgets/vote.dart';
-import 'package:PiliPlus/utils/app_scheme.dart';
-import 'package:PiliPlus/utils/page_utils.dart';
+import 'package:NeoPili/models/common/image_type.dart';
+import 'package:NeoPili/models/dynamics/result.dart';
+import 'package:NeoPili/pages/dynamics/widgets/vote.dart';
+import 'package:NeoPili/utils/app_scheme.dart';
+import 'package:NeoPili/utils/page_utils.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';

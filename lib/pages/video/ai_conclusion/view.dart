@@ -1,8 +1,8 @@
-import 'package:PiliPlus/models_new/video/video_ai_conclusion/model_result.dart';
-import 'package:PiliPlus/pages/common/slide/common_slide_page.dart';
-import 'package:PiliPlus/pages/video/controller.dart';
-import 'package:PiliPlus/pages/video/introduction/ugc/widgets/selectable_text.dart';
-import 'package:PiliPlus/utils/duration_utils.dart';
+import 'package:NeoPili/models_new/video/video_ai_conclusion/model_result.dart';
+import 'package:NeoPili/pages/common/slide/common_slide_page.dart';
+import 'package:NeoPili/pages/video/controller.dart';
+import 'package:NeoPili/pages/video/introduction/ugc/widgets/selectable_text.dart';
+import 'package:NeoPili/utils/duration_utils.dart';
 import 'package:extended_nested_scroll_view/extended_nested_scroll_view.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';

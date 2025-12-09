@@ -1,13 +1,13 @@
 import 'dart:io' show File;
 
-import 'package:PiliPlus/common/widgets/loading_widget/loading_widget.dart';
-import 'package:PiliPlus/http/fav.dart';
-import 'package:PiliPlus/http/msg.dart';
-import 'package:PiliPlus/models_new/fav/fav_folder/list.dart';
-import 'package:PiliPlus/utils/extension.dart';
-import 'package:PiliPlus/utils/fav_utils.dart';
-import 'package:PiliPlus/utils/image_utils.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:NeoPili/common/widgets/loading_widget/loading_widget.dart';
+import 'package:NeoPili/http/fav.dart';
+import 'package:NeoPili/http/msg.dart';
+import 'package:NeoPili/models_new/fav/fav_folder/list.dart';
+import 'package:NeoPili/utils/extension.dart';
+import 'package:NeoPili/utils/fav_utils.dart';
+import 'package:NeoPili/utils/image_utils.dart';
+import 'package:NeoPili/utils/utils.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:easy_debounce/easy_throttle.dart';
 import 'package:flutter/material.dart';

@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:PiliPlus/common/constants.dart';
-import 'package:PiliPlus/grpc/audio.dart';
-import 'package:PiliPlus/grpc/bilibili/app/listener/v1.pb.dart'
+import 'package:NeoPili/common/constants.dart';
+import 'package:NeoPili/grpc/audio.dart';
+import 'package:NeoPili/grpc/bilibili/app/listener/v1.pb.dart'
     show
         DetailItem,
         PlayURLResp,
@@ -13,26 +13,26 @@ import 'package:PiliPlus/grpc/bilibili/app/listener/v1.pb.dart'
         ListOrder,
         DashItem,
         ResponseUrl;
-import 'package:PiliPlus/http/constants.dart';
-import 'package:PiliPlus/http/ua_type.dart';
-import 'package:PiliPlus/pages/common/common_intro_controller.dart'
+import 'package:NeoPili/http/constants.dart';
+import 'package:NeoPili/http/ua_type.dart';
+import 'package:NeoPili/pages/common/common_intro_controller.dart'
     show FavMixin;
-import 'package:PiliPlus/pages/dynamics_repost/view.dart';
-import 'package:PiliPlus/pages/main_reply/view.dart';
-import 'package:PiliPlus/pages/video/controller.dart';
-import 'package:PiliPlus/pages/video/introduction/ugc/widgets/triple_mixin.dart';
-import 'package:PiliPlus/pages/video/pay_coins/view.dart';
-import 'package:PiliPlus/plugin/pl_player/models/play_repeat.dart';
-import 'package:PiliPlus/plugin/pl_player/models/play_status.dart';
-import 'package:PiliPlus/services/service_locator.dart';
-import 'package:PiliPlus/utils/accounts.dart';
-import 'package:PiliPlus/utils/extension.dart';
-import 'package:PiliPlus/utils/global_data.dart';
-import 'package:PiliPlus/utils/id_utils.dart';
-import 'package:PiliPlus/utils/page_utils.dart';
-import 'package:PiliPlus/utils/storage_pref.dart';
-import 'package:PiliPlus/utils/utils.dart';
-import 'package:PiliPlus/utils/video_utils.dart';
+import 'package:NeoPili/pages/dynamics_repost/view.dart';
+import 'package:NeoPili/pages/main_reply/view.dart';
+import 'package:NeoPili/pages/video/controller.dart';
+import 'package:NeoPili/pages/video/introduction/ugc/widgets/triple_mixin.dart';
+import 'package:NeoPili/pages/video/pay_coins/view.dart';
+import 'package:NeoPili/plugin/pl_player/models/play_repeat.dart';
+import 'package:NeoPili/plugin/pl_player/models/play_status.dart';
+import 'package:NeoPili/services/service_locator.dart';
+import 'package:NeoPili/utils/accounts.dart';
+import 'package:NeoPili/utils/extension.dart';
+import 'package:NeoPili/utils/global_data.dart';
+import 'package:NeoPili/utils/id_utils.dart';
+import 'package:NeoPili/utils/page_utils.dart';
+import 'package:NeoPili/utils/storage_pref.dart';
+import 'package:NeoPili/utils/utils.dart';
+import 'package:NeoPili/utils/video_utils.dart';
 import 'package:fixnum/fixnum.dart' show Int64;
 import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';

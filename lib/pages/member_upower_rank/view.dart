@@ -1,14 +1,14 @@
-import 'package:PiliPlus/common/widgets/flutter/list_tile.dart';
-import 'package:PiliPlus/common/widgets/flutter/refresh_indicator.dart';
-import 'package:PiliPlus/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPlus/common/widgets/keep_alive_wrapper.dart';
-import 'package:PiliPlus/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPlus/common/widgets/scroll_physics.dart';
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/models/common/image_type.dart';
-import 'package:PiliPlus/models_new/upower_rank/rank_info.dart';
-import 'package:PiliPlus/pages/member_upower_rank/controller.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:NeoPili/common/widgets/flutter/list_tile.dart';
+import 'package:NeoPili/common/widgets/flutter/refresh_indicator.dart';
+import 'package:NeoPili/common/widgets/image/network_img_layer.dart';
+import 'package:NeoPili/common/widgets/keep_alive_wrapper.dart';
+import 'package:NeoPili/common/widgets/loading_widget/http_error.dart';
+import 'package:NeoPili/common/widgets/scroll_physics.dart';
+import 'package:NeoPili/http/loading_state.dart';
+import 'package:NeoPili/models/common/image_type.dart';
+import 'package:NeoPili/models_new/upower_rank/rank_info.dart';
+import 'package:NeoPili/pages/member_upower_rank/controller.dart';
+import 'package:NeoPili/utils/utils.dart';
 import 'package:flutter/material.dart' hide ListTile;
 import 'package:get/get.dart';
 

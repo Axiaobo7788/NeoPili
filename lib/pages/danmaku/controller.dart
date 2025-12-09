@@ -1,12 +1,12 @@
 import 'dart:collection';
 import 'dart:io' show File;
 
-import 'package:PiliPlus/grpc/bilibili/community/service/dm/v1.pb.dart';
-import 'package:PiliPlus/grpc/dm.dart';
-import 'package:PiliPlus/plugin/pl_player/controller.dart';
-import 'package:PiliPlus/utils/accounts.dart';
-import 'package:PiliPlus/utils/path_utils.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:NeoPili/grpc/bilibili/community/service/dm/v1.pb.dart';
+import 'package:NeoPili/grpc/dm.dart';
+import 'package:NeoPili/plugin/pl_player/controller.dart';
+import 'package:NeoPili/utils/accounts.dart';
+import 'package:NeoPili/utils/path_utils.dart';
+import 'package:NeoPili/utils/utils.dart';
 import 'package:path/path.dart' as path;
 
 class PlDanmakuController {

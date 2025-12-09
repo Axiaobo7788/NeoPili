@@ -4,11 +4,11 @@
 // import axios from 'axios'
 import 'dart:convert';
 
-import 'package:PiliPlus/http/api.dart';
-import 'package:PiliPlus/http/init.dart';
-import 'package:PiliPlus/utils/storage.dart';
-import 'package:PiliPlus/utils/storage_key.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:NeoPili/http/api.dart';
+import 'package:NeoPili/http/init.dart';
+import 'package:NeoPili/utils/storage.dart';
+import 'package:NeoPili/utils/storage_key.dart';
+import 'package:NeoPili/utils/utils.dart';
 import 'package:crypto/crypto.dart';
 import 'package:hive/hive.dart';
 import 'package:synchronized/synchronized.dart';

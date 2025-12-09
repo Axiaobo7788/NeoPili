@@ -1,6 +1,6 @@
-import 'package:PiliPlus/models_new/history/history.dart';
-import 'package:PiliPlus/pages/common/multi_select/base.dart';
-import 'package:PiliPlus/utils/extension.dart';
+import 'package:NeoPili/models_new/history/history.dart';
+import 'package:NeoPili/pages/common/multi_select/base.dart';
+import 'package:NeoPili/utils/extension.dart';
 
 class HistoryItemModel with MultiSelectData {
   String? title;

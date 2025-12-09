@@ -1,13 +1,13 @@
-import 'package:PiliPlus/common/widgets/flutter/dyn/ink_well.dart';
-import 'package:PiliPlus/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPlus/models/common/dynamic/up_panel_position.dart';
-import 'package:PiliPlus/models/common/image_type.dart';
-import 'package:PiliPlus/models/dynamics/up.dart';
-import 'package:PiliPlus/pages/dynamics/controller.dart';
-import 'package:PiliPlus/pages/live_follow/view.dart';
-import 'package:PiliPlus/utils/feed_back.dart';
-import 'package:PiliPlus/utils/page_utils.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:NeoPili/common/widgets/flutter/dyn/ink_well.dart';
+import 'package:NeoPili/common/widgets/image/network_img_layer.dart';
+import 'package:NeoPili/models/common/dynamic/up_panel_position.dart';
+import 'package:NeoPili/models/common/image_type.dart';
+import 'package:NeoPili/models/dynamics/up.dart';
+import 'package:NeoPili/pages/dynamics/controller.dart';
+import 'package:NeoPili/pages/live_follow/view.dart';
+import 'package:NeoPili/utils/feed_back.dart';
+import 'package:NeoPili/utils/page_utils.dart';
+import 'package:NeoPili/utils/utils.dart';
 import 'package:flutter/material.dart' hide InkWell;
 import 'package:get/get.dart';
 

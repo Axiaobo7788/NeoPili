@@ -1,10 +1,10 @@
-import 'package:PiliPlus/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPlus/common/widgets/video_card/video_card_h.dart';
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/models/model_hot_video_item.dart';
-import 'package:PiliPlus/pages/video/related/controller.dart';
-import 'package:PiliPlus/utils/extension.dart';
-import 'package:PiliPlus/utils/grid.dart';
+import 'package:NeoPili/common/widgets/loading_widget/http_error.dart';
+import 'package:NeoPili/common/widgets/video_card/video_card_h.dart';
+import 'package:NeoPili/http/loading_state.dart';
+import 'package:NeoPili/models/model_hot_video_item.dart';
+import 'package:NeoPili/pages/video/related/controller.dart';
+import 'package:NeoPili/utils/extension.dart';
+import 'package:NeoPili/utils/grid.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

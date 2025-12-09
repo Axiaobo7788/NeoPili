@@ -1,9 +1,9 @@
-import 'package:PiliPlus/grpc/bilibili/app/im/v1.pb.dart';
-import 'package:PiliPlus/grpc/bilibili/im/interfaces/v1.pb.dart';
-import 'package:PiliPlus/grpc/bilibili/im/type.pb.dart';
-import 'package:PiliPlus/grpc/grpc_req.dart';
-import 'package:PiliPlus/grpc/url.dart';
-import 'package:PiliPlus/http/loading_state.dart';
+import 'package:NeoPili/grpc/bilibili/app/im/v1.pb.dart';
+import 'package:NeoPili/grpc/bilibili/im/interfaces/v1.pb.dart';
+import 'package:NeoPili/grpc/bilibili/im/type.pb.dart';
+import 'package:NeoPili/grpc/grpc_req.dart';
+import 'package:NeoPili/grpc/url.dart';
+import 'package:NeoPili/http/loading_state.dart';
 import 'package:fixnum/fixnum.dart';
 import 'package:protobuf/protobuf.dart' show PbMap;
 import 'package:uuid/uuid.dart';

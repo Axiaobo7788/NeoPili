@@ -1,6 +1,6 @@
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/pages/common/common_controller.dart';
-import 'package:PiliPlus/utils/extension.dart';
+import 'package:NeoPili/http/loading_state.dart';
+import 'package:NeoPili/pages/common/common_controller.dart';
+import 'package:NeoPili/utils/extension.dart';
 import 'package:get/get.dart';
 
 abstract class CommonListController<R, T> extends CommonController<R, T> {

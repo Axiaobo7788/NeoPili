@@ -1,6 +1,6 @@
-import 'package:PiliPlus/pages/fav/pgc/child_view.dart';
-import 'package:PiliPlus/pages/fav/pgc/controller.dart';
-import 'package:PiliPlus/utils/extension.dart';
+import 'package:NeoPili/pages/fav/pgc/child_view.dart';
+import 'package:NeoPili/pages/fav/pgc/controller.dart';
+import 'package:NeoPili/utils/extension.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

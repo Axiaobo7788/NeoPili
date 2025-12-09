@@ -1,5 +1,5 @@
-import 'package:PiliPlus/grpc/bilibili/community/service/dm/v1.pb.dart';
-import 'package:PiliPlus/models/user/danmaku_block.dart';
+import 'package:NeoPili/grpc/bilibili/community/service/dm/v1.pb.dart';
+import 'package:NeoPili/models/user/danmaku_block.dart';
 
 class RuleFilter {
   static final _regExp = RegExp(r'^/(.*)/$');

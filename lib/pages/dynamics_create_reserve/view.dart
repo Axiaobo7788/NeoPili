@@ -1,6 +1,6 @@
-import 'package:PiliPlus/pages/dynamics_create_reserve/controller.dart';
-import 'package:PiliPlus/utils/date_utils.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:NeoPili/pages/dynamics_create_reserve/controller.dart';
+import 'package:NeoPili/utils/date_utils.dart';
+import 'package:NeoPili/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart'
     show TextInputFormatter, LengthLimitingTextInputFormatter;

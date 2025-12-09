@@ -1,10 +1,10 @@
 import 'dart:math';
 
-import 'package:PiliPlus/models/common/search/article_search_type.dart';
-import 'package:PiliPlus/models/search/result.dart';
-import 'package:PiliPlus/pages/search/widgets/search_text.dart';
-import 'package:PiliPlus/pages/search_panel/controller.dart';
-import 'package:PiliPlus/utils/context_ext.dart';
+import 'package:NeoPili/models/common/search/article_search_type.dart';
+import 'package:NeoPili/models/search/result.dart';
+import 'package:NeoPili/pages/search/widgets/search_text.dart';
+import 'package:NeoPili/pages/search_panel/controller.dart';
+import 'package:NeoPili/utils/context_ext.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart' hide ContextExtensionss;
 

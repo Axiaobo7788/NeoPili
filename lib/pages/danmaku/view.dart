@@ -1,11 +1,11 @@
 import 'dart:convert';
 
-import 'package:PiliPlus/grpc/bilibili/community/service/dm/v1.pb.dart';
-import 'package:PiliPlus/pages/danmaku/controller.dart';
-import 'package:PiliPlus/pages/danmaku/dnamaku_model.dart';
-import 'package:PiliPlus/plugin/pl_player/controller.dart';
-import 'package:PiliPlus/plugin/pl_player/models/play_status.dart';
-import 'package:PiliPlus/utils/danmaku_utils.dart';
+import 'package:NeoPili/grpc/bilibili/community/service/dm/v1.pb.dart';
+import 'package:NeoPili/pages/danmaku/controller.dart';
+import 'package:NeoPili/pages/danmaku/dnamaku_model.dart';
+import 'package:NeoPili/plugin/pl_player/controller.dart';
+import 'package:NeoPili/plugin/pl_player/models/play_status.dart';
+import 'package:NeoPili/utils/danmaku_utils.dart';
 import 'package:canvas_danmaku/canvas_danmaku.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

@@ -1,9 +1,9 @@
-import 'package:PiliPlus/common/widgets/loading_widget/loading_widget.dart';
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/http/member.dart';
-import 'package:PiliPlus/models/member/tags.dart';
-import 'package:PiliPlus/utils/extension.dart';
-import 'package:PiliPlus/utils/feed_back.dart';
+import 'package:NeoPili/common/widgets/loading_widget/loading_widget.dart';
+import 'package:NeoPili/http/loading_state.dart';
+import 'package:NeoPili/http/member.dart';
+import 'package:NeoPili/models/member/tags.dart';
+import 'package:NeoPili/utils/extension.dart';
+import 'package:NeoPili/utils/feed_back.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';

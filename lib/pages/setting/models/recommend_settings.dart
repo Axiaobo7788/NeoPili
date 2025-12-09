@@ -1,9 +1,9 @@
-import 'package:PiliPlus/http/video.dart';
-import 'package:PiliPlus/models/common/settings_type.dart';
-import 'package:PiliPlus/pages/rcmd/controller.dart';
-import 'package:PiliPlus/pages/setting/models/model.dart';
-import 'package:PiliPlus/utils/recommend_filter.dart';
-import 'package:PiliPlus/utils/storage_key.dart';
+import 'package:NeoPili/http/video.dart';
+import 'package:NeoPili/models/common/settings_type.dart';
+import 'package:NeoPili/pages/rcmd/controller.dart';
+import 'package:NeoPili/pages/setting/models/model.dart';
+import 'package:NeoPili/utils/recommend_filter.dart';
+import 'package:NeoPili/utils/storage_key.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

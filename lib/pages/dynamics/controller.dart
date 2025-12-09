@@ -1,16 +1,16 @@
 import 'dart:async';
 
-import 'package:PiliPlus/http/dynamics.dart';
-import 'package:PiliPlus/http/follow.dart';
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/models/common/dynamic/dynamics_type.dart';
-import 'package:PiliPlus/models/dynamics/up.dart';
-import 'package:PiliPlus/models_new/follow/data.dart';
-import 'package:PiliPlus/pages/common/common_controller.dart';
-import 'package:PiliPlus/pages/dynamics_tab/controller.dart';
-import 'package:PiliPlus/services/account_service.dart';
-import 'package:PiliPlus/utils/extension.dart';
-import 'package:PiliPlus/utils/storage_pref.dart';
+import 'package:NeoPili/http/dynamics.dart';
+import 'package:NeoPili/http/follow.dart';
+import 'package:NeoPili/http/loading_state.dart';
+import 'package:NeoPili/models/common/dynamic/dynamics_type.dart';
+import 'package:NeoPili/models/dynamics/up.dart';
+import 'package:NeoPili/models_new/follow/data.dart';
+import 'package:NeoPili/pages/common/common_controller.dart';
+import 'package:NeoPili/pages/dynamics_tab/controller.dart';
+import 'package:NeoPili/services/account_service.dart';
+import 'package:NeoPili/utils/extension.dart';
+import 'package:NeoPili/utils/storage_pref.dart';
 import 'package:easy_debounce/easy_throttle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

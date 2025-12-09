@@ -1,5 +1,5 @@
-import 'package:PiliPlus/models/common/stat_type.dart';
-import 'package:PiliPlus/utils/num_utils.dart';
+import 'package:NeoPili/models/common/stat_type.dart';
+import 'package:NeoPili/utils/num_utils.dart';
 import 'package:flutter/material.dart';
 
 class StatWidget extends StatelessWidget {

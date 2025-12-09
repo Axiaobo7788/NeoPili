@@ -1,14 +1,14 @@
-import 'package:PiliPlus/common/constants.dart';
-import 'package:PiliPlus/common/skeleton/video_card_v.dart';
-import 'package:PiliPlus/common/widgets/flutter/refresh_indicator.dart';
-import 'package:PiliPlus/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/models_new/member/coin_like_arc/item.dart';
-import 'package:PiliPlus/pages/member_coin_arc/controller.dart';
-import 'package:PiliPlus/pages/member_coin_arc/widgets/item.dart';
-import 'package:PiliPlus/utils/accounts.dart';
-import 'package:PiliPlus/utils/grid.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:NeoPili/common/constants.dart';
+import 'package:NeoPili/common/skeleton/video_card_v.dart';
+import 'package:NeoPili/common/widgets/flutter/refresh_indicator.dart';
+import 'package:NeoPili/common/widgets/loading_widget/http_error.dart';
+import 'package:NeoPili/http/loading_state.dart';
+import 'package:NeoPili/models_new/member/coin_like_arc/item.dart';
+import 'package:NeoPili/pages/member_coin_arc/controller.dart';
+import 'package:NeoPili/pages/member_coin_arc/widgets/item.dart';
+import 'package:NeoPili/utils/accounts.dart';
+import 'package:NeoPili/utils/grid.dart';
+import 'package:NeoPili/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

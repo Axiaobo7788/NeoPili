@@ -1,16 +1,16 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:PiliPlus/grpc/bilibili/im/interfaces/v1.pb.dart'
+import 'package:NeoPili/grpc/bilibili/im/interfaces/v1.pb.dart'
     show EmotionInfo, RspSessionMsg;
-import 'package:PiliPlus/grpc/bilibili/im/type.pb.dart' show Msg, MsgType;
-import 'package:PiliPlus/grpc/im.dart';
-import 'package:PiliPlus/http/loading_state.dart';
-import 'package:PiliPlus/http/msg.dart';
-import 'package:PiliPlus/pages/common/common_list_controller.dart';
-import 'package:PiliPlus/utils/accounts.dart';
-import 'package:PiliPlus/utils/extension.dart';
-import 'package:PiliPlus/utils/feed_back.dart';
+import 'package:NeoPili/grpc/bilibili/im/type.pb.dart' show Msg, MsgType;
+import 'package:NeoPili/grpc/im.dart';
+import 'package:NeoPili/http/loading_state.dart';
+import 'package:NeoPili/http/msg.dart';
+import 'package:NeoPili/pages/common/common_list_controller.dart';
+import 'package:NeoPili/utils/accounts.dart';
+import 'package:NeoPili/utils/extension.dart';
+import 'package:NeoPili/utils/feed_back.dart';
 import 'package:fixnum/fixnum.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';

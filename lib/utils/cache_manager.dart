@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:PiliPlus/utils/extension.dart';
-import 'package:PiliPlus/utils/storage_pref.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:NeoPili/utils/extension.dart';
+import 'package:NeoPili/utils/storage_pref.dart';
+import 'package:NeoPili/utils/utils.dart';
 import 'package:path_provider/path_provider.dart';
 
 abstract class CacheManager {

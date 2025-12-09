@@ -1,10 +1,10 @@
-import 'package:PiliPlus/models_new/download/bili_download_entry_info.dart';
-import 'package:PiliPlus/models_new/video/video_detail/stat_detail.dart';
-import 'package:PiliPlus/pages/common/common_intro_controller.dart';
-import 'package:PiliPlus/pages/download/controller.dart';
-import 'package:PiliPlus/plugin/pl_player/models/play_repeat.dart';
-import 'package:PiliPlus/services/service_locator.dart';
-import 'package:PiliPlus/utils/utils.dart';
+import 'package:NeoPili/models_new/download/bili_download_entry_info.dart';
+import 'package:NeoPili/models_new/video/video_detail/stat_detail.dart';
+import 'package:NeoPili/pages/common/common_intro_controller.dart';
+import 'package:NeoPili/pages/download/controller.dart';
+import 'package:NeoPili/plugin/pl_player/models/play_repeat.dart';
+import 'package:NeoPili/services/service_locator.dart';
+import 'package:NeoPili/utils/utils.dart';
 import 'package:extended_nested_scroll_view/extended_nested_scroll_view.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter/scheduler.dart' show SchedulerBinding;

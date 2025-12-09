@@ -1,4 +1,4 @@
-import 'package:PiliPlus/models/model_owner.dart';
+import 'package:NeoPili/models/model_owner.dart';
 
 class FavFolderInfo {
   int id;
