@@ -29,7 +29,7 @@
 
 - [x] Android
 - [x] iOS
-- [x] Pad
+- [x] Macos
 - [x] Windows
 - [x] Linux
 
