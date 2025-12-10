@@ -109,46 +109,46 @@ jobs:
 
           printf "准备源码归档（仅包含运行时与元数据）...\n"
           DATE="$(date '+%a %b %d %Y')"
-          SRC_DIR="$PWD/piliplus-${{ env.version }}"
+          SRC_DIR="$PWD/neopili-${{ env.version }}"
           mkdir -p "$SRC_DIR/bundle" "$SRC_DIR/assets"
           cp -r build/linux/x64/release/bundle/* "$SRC_DIR/bundle/"
-          cp assets/linux/piliplus.desktop "$SRC_DIR/assets/piliplus.desktop"
-          cp assets/images/logo/logo.png "$SRC_DIR/assets/piliplus.png"
-          tar -zcvf "$RPM_BUILD_ROOT/SOURCES/piliplus-${{ env.version }}.tar.gz" -C "$PWD" "piliplus-${{ env.version }}"
+          cp assets/linux/neopili.desktop "$SRC_DIR/assets/neopili.desktop"
+          cp assets/images/logo/logo.png "$SRC_DIR/assets/neopili.png"
+          tar -zcvf "$RPM_BUILD_ROOT/SOURCES/neopili-${{ env.version }}.tar.gz" -C "$PWD" "neopili-${{ env.version }}"
 
           printf "生成 spec 文件...\n"
-          cat > "$RPM_BUILD_ROOT/SPECS/piliplus.spec" <<EOF
-          Name:           piliplus
+          cat > "$RPM_BUILD_ROOT/SPECS/neopili.spec" <<EOF
+          Name:           neopili
           Version:        ${{ env.version }}
           Release:        1%{?dist}
-          Summary:        PiliPlus Linux Version
+          Summary:        NeoPili Linux Version
           License:        GPL-3.0
-          Source0:        piliplus-${{ env.version }}.tar.gz
+          Source0:        neopili-${{ env.version }}.tar.gz
           Requires:       desktop-file-utils, hicolor-icon-theme
 
           %description
           使用 Flutter 开发的 BiliBili 第三方客户端
 
           %prep
-          %setup -q -n piliplus-${{ env.version }}
+          %setup -q -n neopili-${{ env.version }}
 
           %build
 
           %install
-          mkdir -p %{buildroot}/opt/PiliPlus
-          cp -r bundle/* %{buildroot}/opt/PiliPlus/
+          mkdir -p %{buildroot}/opt/NeoPili
+          cp -r bundle/* %{buildroot}/opt/NeoPili/
 
           # 二进制权限与命令行入口
-          chmod 755 %{buildroot}/opt/PiliPlus/piliplus
+          chmod 755 %{buildroot}/opt/NeoPili/neopili
           mkdir -p %{buildroot}/usr/bin
-          ln -sf /opt/PiliPlus/piliplus %{buildroot}/usr/bin/piliplus
+          ln -sf /opt/NeoPili/neopili %{buildroot}/usr/bin/neopili
 
           # 桌面集成
           mkdir -p %{buildroot}/usr/share/applications
-          install -m 644 assets/piliplus.desktop %{buildroot}/usr/share/applications/piliplus.desktop
+          install -m 644 assets/neopili.desktop %{buildroot}/usr/share/applications/neopili.desktop
 
           mkdir -p %{buildroot}/usr/share/icons/hicolor/512x512/apps
-          install -m 644 assets/piliplus.png %{buildroot}/usr/share/icons/hicolor/512x512/apps/piliplus.png
+          install -m 644 assets/neopili.png %{buildroot}/usr/share/icons/hicolor/512x512/apps/neopili.png
 
           %post
           update-desktop-database -q || true
@@ -159,25 +159,25 @@ jobs:
           gtk-update-icon-cache -q -t -f %{_datadir}/icons/hicolor || true
 
           %files
-          /opt/PiliPlus
-          /usr/bin/piliplus
-          /usr/share/applications/piliplus.desktop
-          /usr/share/icons/hicolor/512x512/apps/piliplus.png
+          /opt/NeoPili
+          /usr/bin/neopili
+          /usr/share/applications/neopili.desktop
+          /usr/share/icons/hicolor/512x512/apps/neopili.png
 
           %changelog
           * DATE - ${{ env.version }}-1
           - Initial RPM release
           EOF
 
-          sed -i "s/DATE/${DATE}/g" "$RPM_BUILD_ROOT/SPECS/piliplus.spec"
+          sed -i "s/DATE/${DATE}/g" "$RPM_BUILD_ROOT/SPECS/neopili.spec"
 
           printf "构建 RPM 包...\n"
-          rpmbuild --define "_topdir $RPM_BUILD_ROOT" -bb "$RPM_BUILD_ROOT/SPECS/piliplus.spec"
+          rpmbuild --define "_topdir $RPM_BUILD_ROOT" -bb "$RPM_BUILD_ROOT/SPECS/neopili.spec"
 
           printf "移动生成的 RPM...\n"
-          find "$RPM_BUILD_ROOT/RPMS" -name "*.rpm" -exec mv {} "PiliPlus_linux_${{ env.version }}_amd64.rpm" \;
+          find "$RPM_BUILD_ROOT/RPMS" -name "*.rpm" -exec mv {} "NeoPili_linux_${{ env.version }}_amd64.rpm" \;
 
-          printf "完成: PiliPlus_linux_%s_amd64.rpm\n" "${{ env.version }}"
+          printf "完成: NeoPili_linux_%s_amd64.rpm\n" "${{ env.version }}"
         shell: bash
       
       - name: Package AppImage
@@ -187,7 +187,7 @@ jobs:
           chmod +x appimagetool-x86_64.AppImage
 
           printf "建立 AppDir 目录结构...\n"
-          APPDIR="PiliPlus.AppDir"
+          APPDIR="NeoPili.AppDir"
           mkdir -p "$APPDIR/usr/bin"
           mkdir -p "$APPDIR/usr/lib"
           mkdir -p "$APPDIR/usr/share/applications"
@@ -197,10 +197,10 @@ jobs:
           cp -r build/linux/x64/release/bundle/* "$APPDIR/usr/bin/"
           
           printf "复制桌面文件和图标...\n"
-          cp assets/linux/piliplus.desktop "$APPDIR/piliplus.desktop"
-          cp assets/linux/piliplus.desktop "$APPDIR/usr/share/applications/piliplus.desktop"
-          cp assets/images/logo/logo.png "$APPDIR/piliplus.png"
-          cp assets/images/logo/logo.png "$APPDIR/usr/share/icons/hicolor/512x512/apps/piliplus.png"
+          cp assets/linux/neopili.desktop "$APPDIR/neopili.desktop"
+          cp assets/linux/neopili.desktop "$APPDIR/usr/share/applications/neopili.desktop"
+          cp assets/images/logo/logo.png "$APPDIR/neopili.png"
+          cp assets/images/logo/logo.png "$APPDIR/usr/share/icons/hicolor/512x512/apps/neopili.png"
           
           printf "创建 AppRun 启动脚本...\n"
           cat > "$APPDIR/AppRun" <<'APPRUN_EOF'
@@ -209,18 +209,18 @@ jobs:
           HERE=${SELF%/*}
           export PATH="${HERE}/usr/bin:${PATH}"
           export LD_LIBRARY_PATH="${HERE}/usr/lib:${LD_LIBRARY_PATH}"
-          exec "${HERE}/usr/bin/piliplus" "$@"
+          exec "${HERE}/usr/bin/neopili" "$@"
           APPRUN_EOF
           chmod +x "$APPDIR/AppRun"
 
           printf "修改桌面文件中的 Exec 路径...\n"
-          sed -i 's|Exec=piliplus|Exec=piliplus|g' "$APPDIR/piliplus.desktop"
-          sed -i 's|Icon=piliplus|Icon=piliplus|g' "$APPDIR/piliplus.desktop"
+          sed -i 's|Exec=neopili|Exec=neopili|g' "$APPDIR/neopili.desktop"
+          sed -i 's|Icon=neopili|Icon=neopili|g' "$APPDIR/neopili.desktop"
 
           printf "打包 AppImage...\n"
-          ARCH=x86_64 ./appimagetool-x86_64.AppImage "$APPDIR" "PiliPlus_linux_${{ env.version }}_amd64.AppImage"
+          ARCH=x86_64 ./appimagetool-x86_64.AppImage "$APPDIR" "NeoPili_linux_${{ env.version }}_amd64.AppImage"
           
-          printf "完成: PiliPlus_linux_%s_amd64.AppImage\n" "${{ env.version }}"
+          printf "完成: NeoPili_linux_%s_amd64.AppImage\n" "${{ env.version }}"
         shell: bash
 
       - name: Package pacman (pkg.tar.zst)
@@ -228,23 +228,23 @@ jobs:
           set -e
           PKGROOT="pkgdir"
           rm -rf "$PKGROOT"
-          mkdir -p "$PKGROOT/opt/PiliPlus" \
+          mkdir -p "$PKGROOT/opt/NeoPili" \
                    "$PKGROOT/usr/bin" \
                    "$PKGROOT/usr/share/applications" \
                    "$PKGROOT/usr/share/icons/hicolor/512x512/apps"
 
           printf "复制文件...\n"
-          cp -r build/linux/x64/release/bundle/* "$PKGROOT/opt/PiliPlus/"
-          ln -sf /opt/PiliPlus/piliplus "$PKGROOT/usr/bin/piliplus"
-          cp assets/linux/piliplus.desktop "$PKGROOT/usr/share/applications/piliplus.desktop"
-          cp assets/images/logo/logo.png "$PKGROOT/usr/share/icons/hicolor/512x512/apps/piliplus.png"
+          cp -r build/linux/x64/release/bundle/* "$PKGROOT/opt/NeoPili/"
+          ln -sf /opt/NeoPili/neopili "$PKGROOT/usr/bin/neopili"
+          cp assets/linux/neopili.desktop "$PKGROOT/usr/share/applications/neopili.desktop"
+          cp assets/images/logo/logo.png "$PKGROOT/usr/share/icons/hicolor/512x512/apps/neopili.png"
 
           SIZE=$(du -sb "$PKGROOT" | cut -f1)
           BUILD_DATE=$(date +%s)
           cat > "$PKGROOT/.PKGINFO" <<EOF
-          pkgname = piliplus
+          pkgname = neopili
           pkgver = ${{ env.version }}
-          pkgdesc = PiliPlus Linux Version
+          pkgdesc = NeoPili Linux Version
           url = https://github.com/Axiaobo7788/NeoPili
           builddate = ${BUILD_DATE}
           packager = GitHub Actions
@@ -256,9 +256,8 @@ jobs:
           EOF
 
           printf "打包 pacman 包...\n"
-          tar --sort=name --owner=0 --group=0 --numeric-owner -C "$PKGROOT" --zstd -cf "PiliPlus_linux_${{ env.version }}_amd64.pkg.tar.zst" .
-          printf "完成: PiliPlus_linux_%s_amd64.pkg.tar.zst\n" "${{ env.version }}"
-
+          tar --sort=name --owner=0 --group=0 --numeric-owner -C "$PKGROOT" --zstd -cf "NeoPili_linux_${{ env.version }}_amd64.pkg.tar.zst" .
+          printf "完成: NeoPili_linux_%s_amd64.pkg.tar.zst\n" "${{ env.version }}"
       - name: Release
         if: ${{ github.event.inputs.tag != '' }}
         uses: softprops/action-gh-release@v2
@@ -266,38 +265,38 @@ jobs:
           tag_name: ${{ github.event.inputs.tag }}
           name: ${{ github.event.inputs.tag }}
           files: |
-            PiliPlus_linux_*.tar.gz
-            PiliPlus_linux_*.deb
-            PiliPlus_linux_*.rpm
-            PiliPlus_linux_*.pkg.tar.zst
-            PiliPlus_linux_*.AppImage
+            NeoPili_linux_*.tar.gz
+            NeoPili_linux_*.deb
+            NeoPili_linux_*.rpm
+            NeoPili_linux_*.pkg.tar.zst
+            NeoPili_linux_*.AppImage
 
       - name: Upload linux targz package
         uses: actions/upload-artifact@v4
         with:
           name: Linux_targz_amd64_packege
-          path: PiliPlus_linux_*.tar.gz
+          path: NeoPili_linux_*.tar.gz
 
       - name: Upload linux deb package
         uses: actions/upload-artifact@v4
         with:
           name: Linux_deb_amd64_package
-          path: PiliPlus_linux_*.deb
+          path: NeoPili_linux_*.deb
 
       - name: Upload linux rpm package
         uses: actions/upload-artifact@v4
         with:
           name: Linux_rpm_amd64_package
-          path: PiliPlus_linux_*.rpm
+          path: NeoPili_linux_*.rpm
       
       - name: Upload linux pacman package
         uses: actions/upload-artifact@v4
         with:
           name: Linux_pacman_amd64_package
-          path: PiliPlus_linux_*.pkg.tar.zst
+          path: NeoPili_linux_*.pkg.tar.zst
        
       - name: Upload linux AppImage package
         uses: actions/upload-artifact@v4
         with:
            name: Linux_AppImage_amd64_package
-           path: PiliPlus_linux_*.AppImage
+           path: NeoPili_linux_*.AppImage
