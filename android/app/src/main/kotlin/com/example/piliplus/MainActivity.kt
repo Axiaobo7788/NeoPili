@@ -1,4 +1,4 @@
-package com.example.piliplus
+package com.example.neopili
 
 import android.app.PictureInPictureParams
 import android.app.SearchManager
