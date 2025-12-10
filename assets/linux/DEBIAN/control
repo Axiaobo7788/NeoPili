@@ -1,14 +1,14 @@
-Package: PiliPlus
+Package: NeoPili
 Version: version_need_change
 Maintainer: gh-MzA4Nzk <githubaccount2333@proton.me>
-Original-Maintainer: bggRGjQaUbCoE <githubaccount56556@proton.me>
-Section: x11
+Original-Maintainer: Axiaobo7788
+Section: x11/wayland
 Priority: optional
 Architecture: amd64
 Essential: no
 Installed-Size: size_need_change
 Description: third-party Bilibili client developed in Flutter
-Homepage: https://github.com/bggRGjQaUbCoE/PiliPlus
+Homepage: https://github.com/Axiaobo7788/NeoPili
 Depends: libgtk-3-0t64,
          libmpv2,
          gir1.2-ayatanaappindicator3-0.1,

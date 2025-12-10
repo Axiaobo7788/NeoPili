@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-ln -sf /opt/PiliPlus/piliplus /usr/bin/piliplus
-chmod +x /usr/bin/piliplus
+ln -sf /opt/NeoPili/neopili /usr/bin/neopili
+chmod +x /usr/bin/neopili
 
 if [ $1 == "config" ] && [ -x /usr/binupdate-mime-database ]; then
     echo "updating mime database..."
