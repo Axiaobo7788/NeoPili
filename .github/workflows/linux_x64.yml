@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y clang cmake libgtk-3-dev ninja-build libayatana-appindicator3-dev unzip webkit2gtk-4.1 libasound2-dev rpm patchelf
+          sudo apt-get install -y clang cmake libgtk-3-dev ninja-build libayatana-appindicator3-dev unzip webkit2gtk-4.1 libasound2-dev rpm patchelf zstd
           sudo apt-get install -y gcc g++ autoconf automake debhelper glslang-dev ladspa-sdk xutils-dev libasound2-dev \
               libarchive-dev libbluray-dev libbs2b-dev libcaca-dev libcdio-paranoia-dev libdrm-dev \
               libdav1d-dev libdvdnav-dev libegl1-mesa-dev libepoxy-dev libfontconfig-dev libfreetype6-dev \
@@ -223,6 +223,42 @@ jobs:
           printf "完成: PiliPlus_linux_%s_amd64.AppImage\n" "${{ env.version }}"
         shell: bash
 
+      - name: Package pacman (pkg.tar.zst)
+        run: |
+          set -e
+          PKGROOT="pkgdir"
+          rm -rf "$PKGROOT"
+          mkdir -p "$PKGROOT/opt/PiliPlus" \
+                   "$PKGROOT/usr/bin" \
+                   "$PKGROOT/usr/share/applications" \
+                   "$PKGROOT/usr/share/icons/hicolor/512x512/apps"
+
+          printf "复制文件...\n"
+          cp -r build/linux/x64/release/bundle/* "$PKGROOT/opt/PiliPlus/"
+          ln -sf /opt/PiliPlus/piliplus "$PKGROOT/usr/bin/piliplus"
+          cp assets/linux/piliplus.desktop "$PKGROOT/usr/share/applications/piliplus.desktop"
+          cp assets/images/logo/logo.png "$PKGROOT/usr/share/icons/hicolor/512x512/apps/piliplus.png"
+
+          SIZE=$(du -sb "$PKGROOT" | cut -f1)
+          BUILD_DATE=$(date +%s)
+          cat > "$PKGROOT/.PKGINFO" <<EOF
+          pkgname = piliplus
+          pkgver = ${{ env.version }}
+          pkgdesc = PiliPlus Linux Version
+          url = https://github.com/Axiaobo7788/NeoPili
+          builddate = ${BUILD_DATE}
+          packager = GitHub Actions
+          size = ${SIZE}
+          arch = x86_64
+          license = GPL3
+          depend = desktop-file-utils
+          depend = hicolor-icon-theme
+          EOF
+
+          printf "打包 pacman 包...\n"
+          tar --sort=name --owner=0 --group=0 --numeric-owner -C "$PKGROOT" --zstd -cf "PiliPlus_linux_${{ env.version }}_amd64.pkg.tar.zst" .
+          printf "完成: PiliPlus_linux_%s_amd64.pkg.tar.zst\n" "${{ env.version }}"
+
       - name: Release
         if: ${{ github.event.inputs.tag != '' }}
         uses: softprops/action-gh-release@v2
@@ -233,6 +269,7 @@ jobs:
             PiliPlus_linux_*.tar.gz
             PiliPlus_linux_*.deb
             PiliPlus_linux_*.rpm
+            PiliPlus_linux_*.pkg.tar.zst
             PiliPlus_linux_*.AppImage
 
       - name: Upload linux targz package
@@ -253,8 +290,14 @@ jobs:
           name: Linux_rpm_amd64_package
           path: PiliPlus_linux_*.rpm
       
+      - name: Upload linux pacman package
+        uses: actions/upload-artifact@v4
+        with:
+          name: Linux_pacman_amd64_package
+          path: PiliPlus_linux_*.pkg.tar.zst
+       
       - name: Upload linux AppImage package
         uses: actions/upload-artifact@v4
         with:
-          name: Linux_AppImage_amd64_package
-          path: PiliPlus_linux_*.AppImage
+           name: Linux_AppImage_amd64_package
+           path: PiliPlus_linux_*.AppImage
