@@ -216,14 +216,6 @@ You may download the code via the release option on the right or pull it locally
 
 ## Statement
 
-neopili is a community-driven continuation of piliplus,
-focusing on Linux usability and active collaboration.
-
-This repository exists because:
-- Issues, discussions are currently closed upstream
-- Recent changes broke media_kit support on Linux
-- The community still needs a usable native Bilibili client on Linux
-
 This project (NeoPili) is developed by an individual for personal interest, solely for learning and testing purposes. Please delete it within 24 hours of download. All APIs are sourced from official websites, and no cracked content is provided.
 We pay tribute to the original author: [guozhigq/pilipala](https://github.com/guozhigq/pilipala)
 We pay tribute to the upstream author: [orz12/PiliPalaX](https://github.com/orz12/PiliPalaX),
